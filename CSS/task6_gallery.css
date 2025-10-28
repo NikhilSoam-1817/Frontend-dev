@@ -1,0 +1,9 @@
+*{box-sizing:border-box}
+body{font-family:Arial, Helvetica, sans-serif;margin:0;background:#fafafa;padding:2rem}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.item{position:relative;overflow:hidden;border-radius:10px;box-shadow:0 8px 20px rgba(20,30,60,0.06)}
+.item img{display:block;width:100%;height:180px;object-fit:cover;transition:transform 0.3s ease}
+.item figcaption{position:absolute;left:0;right:0;bottom:0;padding:0.6rem;text-align:center;background:rgba(0,0,0,0.45);color:#fff;opacity:0;transform:translateY(8px);transition:all 0.25s ease}
+
+.item:hover img{transform:scale(1.1)}
+.item:hover figcaption{opacity:1;transform:translateY(0)}
