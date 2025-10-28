@@ -1,0 +1,12 @@
+body{font-family:Georgia, 'Times New Roman', serif;padding:2rem;background:#fcfcfd;color:#111}
+header h1{font-size:2.2rem;margin-bottom:0.25rem}
+.meta{color:#6b7280;margin-bottom:1rem}
+article p{margin:1rem 0;text-align:justify}
+
+/* ::first-letter and ::first-line */
+article p::first-letter{font-size:2.4rem;float:left;margin-right:0.5rem;font-weight:700}
+article p::first-line{font-weight:700}
+
+mark{background:#fffbcc;padding:0.1rem 0.2rem;border-radius:3px}
+
+blockquote{border-left:6px solid #ffd166;background:rgba(255,209,102,0.12);padding:1rem;margin:1.25rem 0}
