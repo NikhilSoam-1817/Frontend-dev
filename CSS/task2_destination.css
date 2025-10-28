@@ -1,0 +1,22 @@
+/* Structure */
+*{box-sizing:border-box}
+body{font-family:Georgia, 'Times New Roman', serif;margin:0}
+.topnav{display:flex;justify-content:space-between;align-items:center;padding:1rem;background:#222;color:#fff}
+.topnav ul{list-style:none;display:flex;gap:1rem}
+.topnav a{color:#fff;text-decoration:none}
+
+/* Full-width sections with different backgrounds */
+.full{min-height:60vh;display:flex;align-items:center;justify-content:center;padding:3rem;border-bottom:6px solid rgba(0,0,0,0.05)}
+.intro{background-image:url('https://via.placeholder.com/1600x800');background-size:cover;background-position:center;background-attachment:fixed;color:#fff}
+.history{background:linear-gradient(120deg,#fdfbfb 0%, #ebedee 100%); color:#111}
+.attractions{background:radial-gradient(circle at 10% 20%, #ffe8b5, #ffd6a5);}
+
+/* Background-attachment fixed for parallax-like effect */
+.intro, .history{background-attachment:fixed}
+
+.content{max-width:900px;padding:2rem;background:rgba(255,255,255,0.7);border-radius:8px}
+.history .content{background:rgba(255,255,255,0.9)}
+
+h2{font-size:2rem;font-weight:700;margin-bottom:0.5rem}
+
+footer{padding:1rem;text-align:center;background:#111;color:#eee}
