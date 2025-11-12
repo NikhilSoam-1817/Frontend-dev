@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Selectors</title>
+    <link rel="stylesheet" href="selectors.css">
+</head>
+<body>
+
+    <h2>Advanced CSS Selectors Demo</h2>
+
+    <h3>1. Attribute Selectors</h3>
+    <input type="text" placeholder="Text input">
+    <input type="password" placeholder="Password input">
+    <a href="https://example.com">Secure Link (https)</a>
+    <a href="http://example.com">Normal Link (http)</a>
+
+    <h3>2. List for nth-child, hover, etc.</h3>
+    <ul class="demo-list">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        <li>Item Five</li>
+    </ul>
+
+    <h3>3. Pseudo-elements</h3>
+    <p class="pseudo-demo">This line will display pseudo-elements before and after.</p>
+
+    <h3>4. Combinators</h3>
+    <div class="parent">
+        <p>Direct child (styled with > selector)</p>
+        <section>
+            <p>Descendant (styled with space selector)</p>
+        </section>
+        <p class="sibling1">Adjacent sibling selector will apply to next p</p>
+        <p class="sibling2">Styled using + selector</p>
+        <p class="general-sibling">Styled using ~ selector</p>
+    </div>
+
+</body>
+</html>

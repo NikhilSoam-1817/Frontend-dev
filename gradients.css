@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Fixed header and footer */
+.header, .footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    text-align: center;
+    padding: 10px;
+    z-index: 10;
+}
+
+.header { top: 0; }
+.footer { bottom: 0; }
+
+/* Page spacing to avoid overlap */
+main {
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+/* Linear Gradient Section */
+.linear {
+    height: 60vh;
+    background: linear-gradient(135deg, #002bff, #00e1ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+/* Radial Gradient Section + parallax effect */
+.radial {
+    height: 60vh;
+    background: radial-gradient(circle, #ff8fa3, #ff3e6c);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}

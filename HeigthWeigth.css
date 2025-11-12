@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #e6f0ff;
+}
+
+/* Centering boxes vertically & horizontally */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 20px;
+}
+
+/* Base box styling */
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Box size variations */
+.box1 {
+    background: teal;
+    height: 200px;
+    width: 40%;
+}
+
+.box2 {
+    background: purple;
+    height: 50vh;
+    min-height: 150px;
+    width: 30%;
+    overflow: auto;
+}
+
+.box3 {
+    background: orange;
+    width: 10em;
+    max-width: 300px;
+    height: auto;
+}
+
+/* Responsive: stack vertically for small screens */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+}

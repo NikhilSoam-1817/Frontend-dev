@@ -1,83 +1,66 @@
-/* General Page Styling */
-body {
+* {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
 }
 
-header, footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 15px 0;
-}
+/* ---------------- Attribute Selectors ---------------- */
 
-main {
-    padding: 20px;
-    line-height: 1.6;
-}
-
-/* 1. Element Selector */
-p {
-    color: #333;
-}
-
-/* 2. Class Selector */
-.highlight {
-    color: blue;
-    font-weight: bold;
-}
-
-/* 3. ID Selector */
-#unique {
-    color: white;
-    background-color: darkred;
-    padding: 5px;
-}
-
-/* 4. Attribute Selector */
-a[title] {
-    color: purple;
-    text-decoration: none;
-}
-a[title]:hover {
-    text-decoration: underline;
-}
+/* Input where type="text" */
 input[type="text"] {
-    border: 2px solid gray;
-    padding: 5px;
-}
-input[type="text"]:focus {
-    border-color: blue;
+    border: 2px solid teal;
 }
 
-/* 5. Combinator Selectors */
-
-/* Descendant selector */
-.parent p {
-    color: darkgreen;
-}
-
-/* Child selector - selects only direct children */
-.parent > p {
+/* Links that start with https */
+a[href^="https"] {
+    color: green;
     font-weight: bold;
 }
 
-/* Adjacent sibling - selects the p that comes immediately after a span */
-span + p {
+/* ---------------- Pseudo Classes ---------------- */
+
+.demo-list li:hover {
+    background: yellow;
+}
+
+.demo-list li:nth-child(odd) {
+    background: #f2f2f2;
+}
+
+.demo-list li:nth-child(even) {
+    background: #dcdcdc;
+}
+
+/* ---------------- Pseudo Elements ---------------- */
+
+.pseudo-demo::before {
+    content: ">>> ";
     color: red;
 }
 
-/* General sibling - selects all p after a span */
-span ~ p {
-    text-decoration: underline;
+.pseudo-demo::after {
+    content: " <<<";
+    color: blue;
 }
 
-/* Spacing and layout */
-section {
-    margin-bottom: 20px;
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
+/* ---------------- Combinators ---------------- */
+
+/* Direct child selector: parent > p */
+.parent > p {
+    background: lightgreen;
+}
+
+/* Descendant selector: parent p */
+.parent section p {
+    background: lightcoral;
+}
+
+/* Adjacent sibling: .sibling1 + p targets only the next p */
+.sibling1 + p {
+    color: purple;
+    font-weight: bold;
+}
+
+/* General sibling: .sibling1 ~ p targets all following siblings */
+.sibling1 ~ p {
+    border-bottom: 1px dashed gray;
 }
