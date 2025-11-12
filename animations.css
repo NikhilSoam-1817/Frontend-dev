@@ -1,0 +1,86 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 15px 0;
+}
+
+/* Flexbox Center Alignment */
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 80vh;
+}
+
+/* 1. Moving Box Animation */
+.move-box {
+    width: 100px;
+    height: 50px;
+    background-color: royalblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    animation: moveRight 3s ease-in-out infinite alternate;
+}
+
+/* Keyframe for Moving Box */
+@keyframes moveRight {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(150px);
+    }
+}
+
+/* 2. Bouncing Ball Animation */
+.ball {
+    width: 50px;
+    height: 50px;
+    background-color: crimson;
+    border-radius: 50%;
+    animation: bounce 1.5s ease-in-out infinite;
+}
+
+/* Keyframes for Bouncing Ball */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+}
+
+/* 3. Color Changing Text Animation */
+.color-text {
+    font-size: 1.5rem;
+    animation: colorChange 3s ease-in-out infinite;
+}
+
+/* Keyframes for Color Changing Text */
+@keyframes colorChange {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: purple; }
+    100% { color: red; }
+}
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    .animation-container {
+        flex-direction: column;
+    }
+}

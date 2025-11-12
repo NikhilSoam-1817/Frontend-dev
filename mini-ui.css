@@ -1,0 +1,106 @@
+/* Universal Box-Sizing */
+* {
+    box-sizing: border-box;
+}
+
+/* Body and Page Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f4f8;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 0;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* Card Layout */
+.card {
+    background: white;
+    padding: 25px;
+    width: 350px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Small Image */
+.avatar {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #1e3a8a;
+    outline: none;
+    box-shadow: 0 0 5px rgba(30, 58, 138, 0.5);
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.primary {
+    background-color: #1e3a8a;
+}
+.primary:hover {
+    background-color: #1c2f75;
+}
+
+.secondary {
+    background-color: #6b7280;
+}
+.secondary:hover {
+    background-color: #4b5563;
+}
+
+/* Responsive Layout */
+@media (max-width: 500px) {
+    .card {
+        width: 90%;
+    }
+}

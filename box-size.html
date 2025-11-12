@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="box-size.css">
+</head>
+<body>
+
+<header>
+    <h1>Box-Sizing: content-box vs border-box</h1>
+</header>
+
+<main class="container">
+    <!-- Default Box-Sizing -->
+    <div class="box content-box">
+        <h3>content-box (default)</h3>
+        <p>Total width = content width + padding + border</p>
+    </div>
+
+    <!-- Border Box-Sizing -->
+    <div class="box border-box">
+        <h3>border-box</h3>
+        <p>Total width includes padding & border inside the set width</p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2025 Box-Sizing Demo</p>
+</footer>
+
+</body>
+</html>

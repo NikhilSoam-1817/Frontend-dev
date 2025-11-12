@@ -1,0 +1,77 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9fc;
+    color: #333;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #444;
+    color: white;
+    padding: 15px 0;
+}
+
+.tooltip-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 50px 0;
+}
+
+/* Tooltip Styling */
+.tooltip {
+    position: relative;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Tooltip hidden by default */
+.tooltip-text {
+    visibility: hidden;
+    opacity: 0;
+    width: 160px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    border-radius: 5px;
+
+    /* Position above the element */
+    position: absolute;
+    bottom: 130%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* Smooth fade-in effect */
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Small arrow below the tooltip */
+.tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 6px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+/* Show tooltip on hover */
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .tooltip-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
