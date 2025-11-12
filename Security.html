@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- HTML Form Security Example -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Security Example</title>
+  </head>
+  <body>
+    <h1>Secure Form Example</h1>
+
+    <!-- Form with autocomplete off and required fields -->
+    <form action="#" method="post" autocomplete="off">
+      <!-- Username Field -->
+      <p>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" required>
+      </p>
+
+      <!-- Password Field -->
+      <p>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required>
+      </p>
+
+      <!-- Email Field -->
+      <p>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+      </p>
+
+      <!-- Submit Button -->
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+    </form>
+
+    <!-- Security Note -->
+    <p>
+      <strong>Note:</strong> Turning off autocomplete using <code>autocomplete="off"</code> 
+      can improve security by preventing browsers from storing sensitive information such as passwords 
+      or personal details, reducing the risk of unauthorized access if someone else uses your device.
+    </p>
+  </body>
+</html>

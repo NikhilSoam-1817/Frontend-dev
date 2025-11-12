@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<!-- Frameset Layout Page -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Frameset Example</title>
+  </head>
+
+  <!-- Using frameset instead of body -->
+  <frameset rows="100px,*" border="2">
+    <!-- Top frame: Navigation links -->
+    <frame src="nav.html" name="topFrame" title="Navigation Links">
+
+    <!-- Bottom frame: Welcome message -->
+    <frame src="welcome.html" name="bottomFrame" title="Welcome Message">
+
+    <noframes>
+      <body>
+        Your browser does not support frames. Please use a modern browser.
+      </body>
+    </noframes>
+  </frameset>
+</html>
