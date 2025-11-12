@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Responsive Image Filter Gallery</title>
+<style>
+  body{font-family:Arial, sans-serif;margin:0;background:#f4f6fb;color:#0b1220;padding:20px;}
+  h1{text-align:center;margin-bottom:18px;}
+  .grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap:16px;
+    align-items:start;
+    max-width:1100px;margin:0 auto;
+  }
+  figure{margin:0;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 6px 18px rgba(10,20,40,0.06);}
+  img{display:block;width:100%;height:220px;object-fit:cover;transition:filter .45s ease, transform .35s ease;}
+  /* different filters */
+  .f-blur img{filter: blur(3px);}
+  .f-grayscale img{filter: grayscale(100%);}
+  .f-sepia img{filter: sepia(0.75);}
+  .f-bright img{filter: brightness(0.7);}
+  .f-contrast img{filter: contrast(140%);}
+  .f-hue img{filter: hue-rotate(90deg);}
+
+  /* remove filter on hover */
+  figure:hover img{filter:none; transform:scale(1.02);}
+
+  figcaption{padding:10px 12px;font-weight:600;background:#fff;color:#111;text-align:center;}
+  @media (max-width:600px){
+    .grid{grid-template-columns:1fr;}
+    img{height:320px;}
+  }
+</style>
+</head>
+<body>
+  <h1>Responsive Image Filter Gallery</h1>
+  <div class="grid">
+    <figure class="f-blur">
+      <img src="https://picsum.photos/id/1015/800/600" alt="Blur example">
+      <figcaption>Blur (removed on hover)</figcaption>
+    </figure>
+    <figure class="f-grayscale">
+      <img src="https://picsum.photos/id/1025/800/600" alt="Grayscale">
+      <figcaption>Grayscale</figcaption>
+    </figure>
+    <figure class="f-sepia">
+      <img src="https://picsum.photos/id/1003/800/600" alt="Sepia">
+      <figcaption>Sepia</figcaption>
+    </figure>
+    <figure class="f-bright">
+      <img src="https://picsum.photos/id/1050/800/600" alt="Brightness">
+      <figcaption>Brightness</figcaption>
+    </figure>
+    <figure class="f-contrast">
+      <img src="https://picsum.photos/id/1067/800/600" alt="Contrast">
+      <figcaption>Contrast</figcaption>
+    </figure>
+    <figure class="f-hue">
+      <img src="https://picsum.photos/id/1074/800/600" alt="Hue rotate">
+      <figcaption>Hue Rotate</figcaption>
+    </figure>
+  </div>
+</body>
+</html>

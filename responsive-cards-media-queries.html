@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Responsive Cards with Media Queries</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:Arial;background:#f6f7fb;padding:20px;color:#0b1220}
+  h1{text-align:center;margin-bottom:18px}
+  .cards{display:flex;gap:18px;justify-content:center;flex-wrap:wrap;max-width:1100px;margin:0 auto}
+  .card{flex:1 1 calc(25% - 18px);min-width:200px;background:#fff;padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(10,20,40,0.06);transition:background .25s ease,transform .25s ease}
+  .card:hover{background:#eef2ff;transform:translateY(-6px)}
+  .card p{margin:10px 0 0}
+  @media (max-width:900px){
+    .card{flex:1 1 calc(50% - 18px)}
+  }
+  @media (max-width:600px){
+    .card{flex:1 1 100%}
+  }
+</style>
+</head>
+<body>
+  <h1>Responsive Cards</h1>
+  <div class="cards">
+    <div class="card"><h3>Card 1</h3><p>Content for card one.</p></div>
+    <div class="card"><h3>Card 2</h3><p>Content for card two.</p></div>
+    <div class="card"><h3>Card 3</h3><p>Content for card three.</p></div>
+    <div class="card"><h3>Card 4</h3><p>Content for card four.</p></div>
+  </div>
+</body>
+</html>

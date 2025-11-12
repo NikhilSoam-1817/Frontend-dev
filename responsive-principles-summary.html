@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Responsive Design Principles Summary</title>
+<style>
+  *{box-sizing:border-box}
+  body{font-family:Arial;margin:0;background:#fbfdff;color:#0b1220;padding:22px}
+  h1{text-align:center;margin-bottom:14px}
+  .grid{display:grid;gap:14px;max-width:900px;margin:0 auto;grid-template-columns:repeat(3,1fr)}
+  .box{background:#fff;padding:18px;border-radius:10px;box-shadow:0 8px 24px rgba(10,20,40,0.06);transition:background .28s ease,color .28s ease}
+  .box:hover{background:linear-gradient(135deg,#7dd3fc,#60a5fa);color:#fff}
+  code{display:block;margin-top:10px;background:rgba(0,0,0,0.04);padding:8px;border-radius:6px}
+  @media (max-width:600px){
+    .grid{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+  <h1>Responsive Design Principles</h1>
+  <div class="grid">
+    <div class="box"><h3>Fluid Layouts</h3><p>Designs that scale with viewport using flexible grids and percentages.</p><code>.container{max-width:100%;padding:1rem;}</code></div>
+    <div class="box"><h3>Flexible Media</h3><p>Images &amp; media using max-width:100% to fit containers.</p><code>img{max-width:100%;height:auto;}</code></div>
+    <div class="box"><h3>Breakpoints</h3><p>Use media queries to alter layout at key widths.</p><code>@media (max-width:600px){...}</code></div>
+  </div>
+</body>
+</html>

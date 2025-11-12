@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Responsive Typography</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:system-ui,Arial;background:#fff8f6;color:#0b1220;display:flex;align-items:center;justify-content:center;min-height:100vh;padding:28px}
+  .wrap{max-width:900px;text-align:center;padding:30px;border-radius:12px;background:#ffffff;box-shadow:0 10px 30px rgba(10,20,40,0.05)}
+  h1{margin:0 0 14px;font-size:clamp(1.5rem,4vw,3rem);line-height:1.05}
+  p{margin:0 auto;font-size:clamp(1rem,2vw,1.5rem);line-height:1.6;max-width:70ch;color:#334155}
+  @media (max-width:700px){
+    p{line-height:1.45;padding:6px}
+    .wrap{padding:20px}
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Responsive Typography with clamp()</h1>
+    <p>Using relative units and clamp() ensures headings and paragraphs scale smoothly between small and large screens. This provides balanced readability across devices.</p>
+  </div>
+</body>
+</html>
