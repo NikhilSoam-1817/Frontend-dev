@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fafafa;
+}
+
+/* Create 2 rows & 3 columns Grid */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(2, 150px);
+  gap: 15px;
+}
+
+/* Box individual styling */
+.box {
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+/* Hover Effect */
+.box:hover {
+  background-color: skyblue;
+  transform: scale(1.05);
+  transition: 0.2s;
+}

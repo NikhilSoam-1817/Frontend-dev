@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  gap: 15px;
+  padding: 15px;
+  background: #f4f6fa;
+
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+
+  grid-template-columns: 1fr 3fr;
+}
+
+/* Header */
+.header {
+  grid-area: header;
+  background: #3b5bdb;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav a {
+  color: white;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+  background: #dbe4ff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sidebar ul {
+  margin-top: 10px;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+/* Content */
+.content {
+  grid-area: content;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.post {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+.footer {
+  grid-area: footer;
+  background: #3b5bdb;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+/* 📱 Responsive Below 800px: Sidebar moves below */
+@media (max-width: 800px) {
+  body {
+    grid-template-areas:
+      "header"
+      "content"
+      "sidebar"
+      "footer";
+
+    grid-template-columns: 1fr;
+  }
+
+  .content {
+    grid-template-columns: 1fr; /* blog posts stack */
+  }
+}

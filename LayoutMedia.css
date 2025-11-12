@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #eef2ff;
+}
+
+/* Header and Footer Full Width */
+header, footer {
+  background: #4b6bfb;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Main Section */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px;
+}
+
+/* Boxes */
+.box {
+  width: 45%;
+  height: 200px;
+  background: #93b3ff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.box:hover {
+  background: #6d94ff;
+  transform: translateY(-8px);
+}
+
+/* ✅ Media Query for screens below 600px */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .box {
+    width: 90%;
+  }
+}
