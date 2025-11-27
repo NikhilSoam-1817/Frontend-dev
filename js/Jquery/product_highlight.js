@@ -1,0 +1,1 @@
+// product_highlight JS

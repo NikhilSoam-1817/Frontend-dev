@@ -1,0 +1,1 @@
+// multi_jquery_widgets JS

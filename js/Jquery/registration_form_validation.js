@@ -1,0 +1,1 @@
+// registration_form_validation JS
