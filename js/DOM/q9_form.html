@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Q9 - Form Submit Blocker with Live Errors</title>
+<style>
+  body{font-family:Arial;padding:18px}
+  .error{color:red;font-size:13px}
+  .success{color:green}
+</style>
+</head>
+<body>
+  <h2>Q9 — Validated Form</h2>
+  <form id="q9-form" novalidate>
+    <div>
+      <label>Name: <input id="f-name" name="name"></label>
+      <div id="err-name" class="error"></div>
+    </div>
+    <div>
+      <label>Email: <input id="f-email" name="email"></label>
+      <div id="err-email" class="error"></div>
+    </div>
+    <div>
+      <label>Password: <input id="f-password" name="password" type="password"></label>
+      <div id="err-password" class="error"></div>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <div id="q9-msg"></div>
+
+<script src="q9_form.js"></script>
+</body>
+</html>
