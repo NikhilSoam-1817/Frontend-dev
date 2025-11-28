@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Fix bug #234",
+      "priority": "High",
+      "completed": false
+    },
+    {
+      "id": 2,
+      "title": "Write documentation",
+      "priority": "Low",
+      "completed": false
+    },
+    {
+      "id": 3,
+      "title": "Implement pagination",
+      "priority": "Medium",
+      "completed": true
+    },
+    {
+      "id": 4,
+      "title": "Code review",
+      "priority": "Medium",
+      "completed": false
+    },
+    {
+      "id": 5,
+      "title": "Release v1.2",
+      "priority": "High",
+      "completed": false
+    }
+  ]
+}
