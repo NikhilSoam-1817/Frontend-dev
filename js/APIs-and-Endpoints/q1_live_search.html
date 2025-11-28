@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Q1 - Live Product Search</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body{font-family:Arial;padding:18px}
+    .product{display:flex;gap:12px;padding:8px;border-bottom:1px solid #eee;align-items:center}
+    .loading{display:none}
+    .no-results{color:#999;padding:8px}
+    img{width:80px;height:80px;object-fit:cover}
+  </style>
+</head>
+<body>
+  <h2>Q1 — Real-Time Live Search (/products)</h2>
+  <input id="q1-search" placeholder="Search products..." autofocus>
+  <div class="loading" id="q1-loading">Loading...</div>
+  <div id="q1-results"></div>
+
+<script src="q1_live_search.js"></script>
+</body>
+</html>
