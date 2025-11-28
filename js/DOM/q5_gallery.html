@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Q5 - Image Gallery with Modal</title>
+<style>
+  body{font-family:Arial;padding:18px}
+  .grid{display:flex;flex-wrap:wrap;gap:8px}
+  .grid img{width:150px;height:100px;object-fit:cover;cursor:pointer}
+  .modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6);display:none}
+  .modal .inner{background:#fff;padding:10px;border-radius:6px}
+  .modal img{max-width:80vw;max-height:80vh}
+</style>
+</head>
+<body>
+  <h2>Q5 — Image Gallery</h2>
+  <div class="grid" id="gallery">
+    <img src="https://picsum.photos/id/1015/600/400" alt="">
+    <img src="https://picsum.photos/id/1016/600/400" alt="">
+    <img src="https://picsum.photos/id/1018/600/400" alt="">
+    <img src="https://picsum.photos/id/1020/600/400" alt="">
+    <img src="https://picsum.photos/id/1024/600/400" alt="">
+    <img src="https://picsum.photos/id/1027/600/400" alt="">
+  </div>
+
+  <div class="modal" id="modal">
+    <div class="inner" id="modal-inner">
+      <img id="modal-img" src="">
+    </div>
+  </div>
+
+<script src="q5_gallery.js"></script>
+</body>
+</html>
