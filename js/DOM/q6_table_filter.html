@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Q6 - Real-Time Table Filter</title>
+<style>
+  body{font-family:Arial;padding:18px}
+  table{border-collapse:collapse;width:100%}
+  th,td{padding:8px;border:1px solid #ddd}
+  .no-results{color:#999;margin-top:8px}
+</style>
+</head>
+<body>
+<h2>Q6 — Student Table Filter</h2>
+<input id="q6-search" placeholder="Search name or branch">
+<table id="students">
+  <thead><tr><th>Name</th><th>Branch</th><th>CGPA</th></tr></thead>
+  <tbody>
+    <tr><td>Asha</td><td>CS</td><td>9.1</td></tr>
+    <tr><td>Vikram</td><td>ME</td><td>8.2</td></tr>
+    <tr><td>Rita</td><td>EE</td><td>8.8</td></tr>
+    <tr><td>Suresh</td><td>CS</td><td>7.5</td></tr>
+    <tr><td>Neha</td><td>IT</td><td>8.9</td></tr>
+  </tbody>
+</table>
+<div id="q6-no" class="no-results" style="display:none">No results found</div>
+
+<script src="q6_table_filter.js"></script>
+</body>
+</html>
